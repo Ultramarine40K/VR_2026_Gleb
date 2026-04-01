@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
@@ -17,12 +16,11 @@ public class TeleportationActivator : MonoBehaviour
     void ActionPerformed(InputAction.CallbackContext obj)
     {
         TeleportInteractor.gameObject.SetActive(true);
-
     }
 
     void Update()
     {
-        if (TeleportActivatorAction.action.WasPressedThisFrame())
+        if (TeleportActivatorAction.action.WasReleasedThisFrame())
         {
             TeleportInteractor.gameObject.SetActive(false);
         }

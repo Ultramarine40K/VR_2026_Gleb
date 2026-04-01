@@ -518,7 +518,7 @@ MonoBehaviour:
   m_ParentInteractableObject: {fileID: 0}
   m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -1300,6 +1300,33 @@ MonoBehaviour:
       m_Flags: 0
     m_Reference: {fileID: 7904272356298805229, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   HandAnimator: {fileID: 751006384}
+--- !u!1 &791253648 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8164078558771037576, guid: 20306449ebc6855439363af71a0f43b4, type: 3}
+  m_PrefabInstance: {fileID: 1595837822}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &791253650
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791253648}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -2432090755550338912, guid: 20306449ebc6855439363af71a0f43b4, type: 3}
 --- !u!1 &805101154
 GameObject:
   m_ObjectHideFlags: 0
@@ -1444,6 +1471,7 @@ Transform:
   m_Children:
   - {fileID: 2125931971}
   - {fileID: 479216028}
+  - {fileID: 810301982}
   m_Father: {fileID: 431454423}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &808567077
@@ -1527,7 +1555,7 @@ GameObject:
   - component: {fileID: 810301984}
   - component: {fileID: 810301983}
   m_Layer: 0
-  m_Name: LeftDirectIteractor (1)
+  m_Name: LeftDirectIteractor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1541,12 +1569,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 810301981}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2125931971}
+  m_Father: {fileID: 808567076}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!135 &810301983
 SphereCollider:
@@ -2029,7 +2057,7 @@ MonoBehaviour:
   m_ParentInteractableObject: {fileID: 0}
   m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -2076,7 +2104,8 @@ MonoBehaviour:
   m_RetainTransformParent: 1
   m_StartingSingleGrabTransformers:
   - {fileID: 992323193}
-  m_StartingMultipleGrabTransformers: []
+  m_StartingMultipleGrabTransformers:
+  - {fileID: 992323193}
   m_AddDefaultGrabTransformers: 1
   m_FarAttachMode: 0
   m_LimitLinearVelocity: 0
@@ -2412,7 +2441,7 @@ MonoBehaviour:
   m_ParentInteractableObject: {fileID: 0}
   m_AttachTransform: {fileID: 0}
   m_SecondaryAttachTransform: {fileID: 0}
-  m_UseDynamicAttach: 0
+  m_UseDynamicAttach: 1
   m_MatchAttachPosition: 1
   m_MatchAttachRotation: 1
   m_SnapToColliderVolume: 1
@@ -3542,7 +3571,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 20306449ebc6855439363af71a0f43b4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 13.219
+      value: 12.518
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 20306449ebc6855439363af71a0f43b4, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3550,19 +3579,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 20306449ebc6855439363af71a0f43b4, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -7.232
+      value: -6.783
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 20306449ebc6855439363af71a0f43b4, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.60876155
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 20306449ebc6855439363af71a0f43b4, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 20306449ebc6855439363af71a0f43b4, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0.7933533
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 20306449ebc6855439363af71a0f43b4, type: 3}
       propertyPath: m_LocalRotation.z
@@ -3574,11 +3603,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 20306449ebc6855439363af71a0f43b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 20306449ebc6855439363af71a0f43b4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 20306449ebc6855439363af71a0f43b4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 20306449ebc6855439363af71a0f43b4, type: 3}
       propertyPath: m_Name
@@ -3590,7 +3623,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: 20306449ebc6855439363af71a0f43b4, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1740233576}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: 20306449ebc6855439363af71a0f43b4, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 791253650}
   m_SourcePrefab: {fileID: 100100000, guid: 20306449ebc6855439363af71a0f43b4, type: 3}
 --- !u!1 &1701817624
 GameObject:
@@ -3830,7 +3866,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1740233571}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -4439,10 +4475,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 109434732395451517, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
-      insertIndex: 0
-      addedObject: {fileID: 810301982}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 109434732395284509, guid: 65847589f926b734d9eaed6e25f0046b, type: 3}
       insertIndex: -1
