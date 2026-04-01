@@ -6,6 +6,6 @@ public class BascetRing : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        Instantiate(FX, transform);
+        Instantiate(FX, transform.parent);
     }
 }
